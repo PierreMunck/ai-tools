@@ -1,0 +1,34 @@
+{
+  "name": "@pierremunck/ai-tools",
+  "version": "0.1.0",
+  "description": "Personal skills, agents and hooks for AI coding assistants — one source, installed into Claude Code, Codex and Mistral Vibe.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Pierre Munck",
+  "repository": "github:PierreMunck/ai-tools",
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "mistral-vibe",
+    "hooks"
+  ],
+  "bin": {
+    "ai-tools": "bin/ai-tools.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "skills",
+    "agents",
+    "hooks",
+    "!**/*.test.mjs"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "test": "node --test",
+    "install:local": "node bin/ai-tools.mjs install"
+  }
+}
